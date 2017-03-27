@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/roundimage"
+
+    tools:context="com.example.akshay.swissknife.MainActivity">
+
+
+    <Button
+        android:text="SMS"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/Bsms"
+        android:background="#9edddddd"
+        android:onClick="onButtonClick"
+        android:layout_alignTop="@+id/Bredial"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Alarm"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/Balarm"
+        android:onClick="onButtonClick"
+        android:background="#9edddddd"
+        android:layout_alignTop="@+id/Bstopwatch"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Stopwatch"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/Bstopwatch"
+        android:onClick="onButtonClick"
+        android:cursorVisible="false"
+        android:background="#9edddddd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="37dp" />
+
+    <Button
+        android:text="Dial Recent Calls"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/Bredial"
+        android:onClick="onButtonClick"
+        android:background="#9edddddd"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Search Contact"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/Bcontact"
+        android:onClick="onButtonClick"
+        android:background="#9edddddd"
+        android:layout_alignTop="@+id/Bmap"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:hint="Enter contact"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/CText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:hint="Enter address"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Mtext"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Search maps"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/Bmap"
+        android:onClick="onButtonClick"
+        android:background="#9edddddd"
+        android:layout_below="@+id/Mtext"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
